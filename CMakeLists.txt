@@ -15,6 +15,5 @@ add_executable(ipc_driver ipc_driver.cpp)
 add_executable(rgen rgen.cpp)
 
 # create the executable for tests
-add_executable(tests test.cpp)
 install(PROGRAMS input_parser.py street_db.py DESTINATION bin)
 install(TARGETS shortest_path ipc_driver rgen RUNTIME DESTINATION bin)
