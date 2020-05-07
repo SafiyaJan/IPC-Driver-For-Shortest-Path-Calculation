@@ -33,7 +33,10 @@ mkdir build && cd build && cmake ../ && make
 ```
 ### Running the Program
 
-#### Optional Arguments 
+#### Optional Arguments
+
+The random street spec generator takes in 4 optional arguments which allow you alter change the number of streets, the number of segments in each street, the duration between each graph generation and the bounds of the coordinates of the generated streets. The arguments are as follows:
+
 - ```-s k``` where k is an integer >= 2. The number of streets should be a random integer in [2,k].
 If this option is not specified, a default of k = 10 is used; that is, the number of street is a random integer in [2,10].
 - ```-n k``` where k is an integer >= 1. The number of line-segments in each street is a random integer in [1,k]. 
@@ -42,7 +45,36 @@ Default: k = 5.
 - ```-c k``` where k is an integer >= 1. The process generates (x,y) coordinates such that every x and y value is in the range [-k,k]. For example, if k = 15, all coordinate values are integers between -15 and 15. Default: k = 20.
 
 
+#### Default Mode
+Since all the above arguments are optional, the driver can be run in default mode as follows under the ```/build``` folder:
+```
+cd /run/bin
+./ipc_driver
 
+# Example Run
+# driver output
+V 5
+E {<0,1>,<1,2>,<3,1>,<1,4>}
+
+# user input to find shortest path between vertex 3 and vertex 2
+s 3 2
+3-1-2
+```
+
+#### Special Mode
+This mode runs the driver under the optional arguments defined above. This is can be done by running the driver under the ```/build``` folder as follows:
+```
+cd /run/bin
+./ipc_driver ./a3ece650 -s 5 -n 4 -l 5
+
+# Example Run
+# driver output
+V 13
+E {<0,1>,<1,2>,<2,3>,<3,4>,<4,5>,<6,7>,<7,4>,<4,8>,<9,1>,<1,10>,<10,2>,<2,11>,<11,7>,<7,3>,<3,12>}
+
+s 1 12    # user input to find shortest path between vertex 3 and vertex 2
+1-2-3-12  # driver output  
+```
 
 
 
