@@ -65,7 +65,7 @@ s 3 2
 This mode runs the driver under the optional arguments defined above. This is can be done by running the driver under the ```/build``` folder as follows:
 ```
 cd /run/bin
-./ipc_driver ./a3ece650 -s 5 -n 4 -l 5
+./ipc_driver ./ipc_driver -s 5 -n 4 -l 5
 
 # Example Run
 # driver output
