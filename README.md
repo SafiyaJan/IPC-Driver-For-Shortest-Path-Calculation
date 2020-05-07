@@ -56,9 +56,8 @@ cd /run/bin
 V 5
 E {<0,1>,<1,2>,<3,1>,<1,4>}
 
-# user input to find shortest path between vertex 3 and vertex 2
-s 3 2
-3-1-2
+s 3 2  # user input to find shortest path between vertex 3 and vertex 2
+3-1-2  # driver output
 ```
 
 #### Special Mode
@@ -72,11 +71,6 @@ cd /run/bin
 V 13
 E {<0,1>,<1,2>,<2,3>,<3,4>,<4,5>,<6,7>,<7,4>,<4,8>,<9,1>,<1,10>,<10,2>,<2,11>,<11,7>,<7,3>,<3,12>}
 
-s 1 12    # user input to find shortest path between vertex 3 and vertex 2
+s 1 12    # user input to find shortest path between vertex 1 and vertex 12
 1-2-3-12  # driver output  
 ```
-
-
-
-
-
