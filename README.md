@@ -39,7 +39,7 @@ If this option is not specified, a default of k = 10 is used; that is, the numbe
 - ```-n k``` where k is an integer >= 1. The number of line-segments in each street is a random integer in [1,k]. 
 Default: k = 5.
 - ```-l k``` where k is an integer >= 5. The process waits a random number w seconds, where w is in [5,k] before generating the next (random) input. Default: k = 5.
-- ```-c k``` where k is an integer >= 1. The process generates (x,y) coordinates such thatevery x and y value is in the range [-k,k]. For example, if k = 15, all coordinate values are integers between -15 and 15. Default: k = 20.
+- ```-c k``` where k is an integer >= 1. The process generates (x,y) coordinates such that every x and y value is in the range [-k,k]. For example, if k = 15, all coordinate values are integers between -15 and 15. Default: k = 20.
 
 
 
